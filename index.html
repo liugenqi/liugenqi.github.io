@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>刘根琦 | Liugenqi</title>
-  <meta name="description" content="刘根琦的个人网站，记录项目文档、技术笔记、心得文章和一些正在做的小东西。">
+  <meta name="description" content="刘根琦的个人主页，整理项目文档、技术笔记、心得文章和长期记录。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="刘根琦 | Liugenqi">
-  <meta property="og:description" content="个人主页、项目文档、技术笔记与心得文章。">
+  <meta property="og:description" content="项目文档、技术笔记、心得文章和长期记录。">
   <meta property="og:url" content="https://liugenqi.github.io/">
   <meta property="og:site_name" content="刘根琦">
   <meta name="twitter:card" content="summary">
@@ -16,110 +16,92 @@
 </head>
 <body class="home-page">
   <header class="site-header" aria-label="主导航">
-    <a class="brand" href="/" aria-label="返回首页">LGQ</a>
-    <nav class="site-nav" aria-label="页面导航">
-      <a href="#projects">项目</a>
-      <a href="#writing">文章</a>
-      <a href="/archives/">归档</a>
-      <a href="https://github.com/liugenqi" target="_blank" rel="noopener">GitHub</a>
-    </nav>
+    <div class="masthead">
+      <a class="site-title" href="/">刘根琦 / Liugenqi</a>
+      <nav class="site-nav" aria-label="页面导航">
+        <a href="#projects">Projects</a>
+        <a href="#docs">Docs</a>
+        <a href="#notes">Notes</a>
+        <a href="/archives/">Archive</a>
+        <a href="https://github.com/liugenqi" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="home-shell">
-    <aside class="profile-panel" aria-label="个人信息">
-      <div class="profile-mark" aria-hidden="true">LGQ</div>
+  <main class="page">
+    <aside class="author-profile" aria-label="个人信息">
+      <div class="author-avatar" aria-hidden="true">LGQ</div>
       <h1>刘根琦</h1>
-      <p class="profile-en">Liugenqi</p>
-      <p class="profile-bio">关注工程实践、AI 工具、项目沉淀和长期记录。</p>
-      <div class="profile-links">
-        <a href="https://github.com/liugenqi" target="_blank" rel="noopener">GitHub</a>
-        <a href="/archives/">Archives</a>
-        <a href="https://liugenqi.github.io/">Website</a>
-      </div>
+      <p class="author-subtitle">Liugenqi</p>
+      <p>关注工程实践、AI 工具、项目沉淀和长期记录。</p>
+      <ul class="author-links">
+        <li>China</li>
+        <li><a href="https://github.com/liugenqi" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="/archives/">Archives</a></li>
+        <li><a href="https://liugenqi.github.io/">liugenqi.github.io</a></li>
+      </ul>
     </aside>
 
-    <section class="home-main">
+    <article class="page-content">
       <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow">Personal homepage</p>
-        <h2 id="hero-title">项目文档、技术笔记和一些真实的想法。</h2>
-        <p class="hero-copy">这里会是一个轻量但可长期维护的个人主页：项目放得下，文章找得到，最近在做什么也不用翻很久。</p>
-        <div class="hero-actions" aria-label="主要入口">
-          <a class="button primary" href="#projects">看项目入口</a>
-          <a class="button outline" href="#writing">读文章记录</a>
-        </div>
+        <h2 id="hero-title">个人主页</h2>
+        <p>这里会整理我的项目文档、技术笔记、心得文章和一些长期记录。页面会尽量保持简单：能快速找到内容，后续也方便持续补充。</p>
+        <p>目前站点还在整理中。优先放项目说明、使用文档、技术复盘和读书/实践心得。</p>
       </section>
 
-      <section class="quick-grid" aria-label="内容入口">
-        <a class="quick-card" href="#projects">
-          <span>Projects</span>
-          <strong>项目与文档</strong>
-          <p>未来放项目说明、使用文档、路线图和复盘。</p>
-        </a>
-        <a class="quick-card" href="#writing">
-          <span>Writing</span>
-          <strong>心得与文章</strong>
-          <p>技术笔记、读书摘录、踩坑记录和日常观察。</p>
-        </a>
-        <a class="quick-card" href="/archives/">
-          <span>Archive</span>
-          <strong>全部归档</strong>
-          <p>保留原博客归档入口，后续逐步整理内容。</p>
-        </a>
+      <section id="projects" class="content-block" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <p>项目相关内容会放在这里，包括项目简介、代码仓库、路线图、复盘和文档入口。</p>
+        <ul class="item-list">
+          <li>
+            <a href="https://github.com/liugenqi" target="_blank" rel="noopener">代码与实验</a>
+            <span>公开仓库、练手项目和正在迭代的小工具。</span>
+          </li>
+          <li>
+            <a href="/archives/">个人站点整理</a>
+            <span>把博客改造成更适合沉淀项目和文章的个人主页。</span>
+          </li>
+        </ul>
       </section>
 
-      <section class="content-grid">
-        <section id="projects" class="content-section" aria-labelledby="projects-title">
-          <div class="section-heading">
-            <p class="section-kicker">Projects</p>
-            <h2 id="projects-title">项目文档</h2>
-          </div>
-          <div class="entry-list">
-            <a class="entry-item" href="https://github.com/liugenqi" target="_blank" rel="noopener">
-              <span class="entry-date">GitHub</span>
-              <strong>代码与实验</strong>
-              <p>公开仓库、练手项目和正在迭代的小工具。</p>
-            </a>
-            <a class="entry-item" href="/archives/">
-              <span class="entry-date">Site</span>
-              <strong>个人站点整理</strong>
-              <p>把首页改造成可承载项目文档和文章索引的入口。</p>
-            </a>
-          </div>
-        </section>
-
-        <section id="writing" class="content-section" aria-labelledby="writing-title">
-          <div class="section-heading">
-            <p class="section-kicker">Writing</p>
-            <h2 id="writing-title">最近文章</h2>
-          </div>
-          <div class="entry-list">
-            <a class="entry-item" href="/2025/04/03/hello-world/">
-              <span class="entry-date">2025-04-03</span>
-              <strong>开站记录</strong>
-              <p>从默认博客模板开始，慢慢变成更实用的个人入口。</p>
-            </a>
-            <div class="entry-item muted-entry">
-              <span class="entry-date">Next</span>
-              <strong>下一篇文章位</strong>
-              <p>后续可以放技术心得、项目复盘或读书笔记。</p>
-            </div>
-          </div>
-        </section>
+      <section id="docs" class="content-block" aria-labelledby="docs-title">
+        <h2 id="docs-title">Docs</h2>
+        <p>以后可以把项目文档按主题放在这里，例如环境搭建、使用说明、设计记录、问题排查和版本变更。</p>
+        <ul class="plain-list">
+          <li>项目说明：为什么做、解决什么问题、当前状态。</li>
+          <li>使用文档：安装、配置、常见问题和示例。</li>
+          <li>开发记录：关键设计、踩坑复盘和后续计划。</li>
+        </ul>
       </section>
 
-      <section class="notes-strip" aria-label="最近计划">
-        <div>
-          <span>Now</span>
-          <strong>接下来优先补真实内容</strong>
-        </div>
-        <p>建议先补 2-3 个项目文档，再把心得文章按“技术 / 项目 / 随笔”归类，页面就会自然丰满起来。</p>
+      <section id="notes" class="content-block" aria-labelledby="notes-title">
+        <h2 id="notes-title">Notes</h2>
+        <p>心得文章、技术笔记和随笔会逐步放到这里。先保留归档入口，后续再按主题拆分。</p>
+        <ul class="item-list">
+          <li>
+            <a href="/2025/04/03/hello-world/">开站记录</a>
+            <span>从默认博客模板开始，慢慢变成更实用的个人入口。</span>
+          </li>
+          <li>
+            <a href="/archives/">全部归档</a>
+            <span>查看当前已有文章。</span>
+          </li>
+        </ul>
       </section>
-    </section>
+
+      <section class="content-block" aria-labelledby="recent-title">
+        <h2 id="recent-title">Recent Updates</h2>
+        <ul class="updates">
+          <li><time datetime="2026-07-03">2026-07-03</time> 重做首页结构，改成更接近 Academic Pages 的个人主页布局。</li>
+          <li><time datetime="2025-04-03">2025-04-03</time> 创建第一篇开站记录。</li>
+        </ul>
+      </section>
+    </article>
   </main>
 
   <footer class="site-footer">
     <span>&copy; 2026 刘根琦</span>
-    <a href="/archives/">Archives</a>
+    <span>Built with GitHub Pages</span>
   </footer>
 </body>
 </html>
