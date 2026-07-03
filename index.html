@@ -4,144 +4,116 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>刘根琦 | Liugenqi</title>
-  <meta name="description" content="刘根琦的个人网站，记录技术、项目、想法和生活。">
+  <meta name="description" content="刘根琦的个人网站，记录项目文档、技术笔记、心得文章和一些正在做的小东西。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="刘根琦 | Liugenqi">
-  <meta property="og:description" content="一个正在长期打磨的个人网站，放项目、笔记、想法和一点真实的日常。">
+  <meta property="og:description" content="个人主页、项目文档、技术笔记与心得文章。">
   <meta property="og:url" content="https://liugenqi.github.io/">
   <meta property="og:site_name" content="刘根琦">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="shortcut icon" href="/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="home-page">
   <header class="site-header" aria-label="主导航">
     <a class="brand" href="/" aria-label="返回首页">LGQ</a>
     <nav class="site-nav" aria-label="页面导航">
-      <a href="#now">现在</a>
-      <a href="#work">作品</a>
-      <a href="#writing">文字</a>
-      <a href="#contact">联系</a>
+      <a href="#projects">项目</a>
+      <a href="#writing">文章</a>
       <a href="/archives/">归档</a>
+      <a href="https://github.com/liugenqi" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-media" role="img" aria-label="太空视角下的地平线与星空"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Personal site of Liugenqi</p>
-        <h1 id="hero-title">刘根琦</h1>
-        <p class="hero-copy">把技术、产品和生活里冒出来的想法，慢慢做成可用的小东西。</p>
-        <div class="hero-actions" aria-label="主要操作">
-          <a class="button primary" href="#work">看看作品</a>
-          <a class="button ghost" href="/archives/">读点记录</a>
+  <main class="home-shell">
+    <aside class="profile-panel" aria-label="个人信息">
+      <div class="profile-mark" aria-hidden="true">LGQ</div>
+      <h1>刘根琦</h1>
+      <p class="profile-en">Liugenqi</p>
+      <p class="profile-bio">关注工程实践、AI 工具、项目沉淀和长期记录。</p>
+      <div class="profile-links">
+        <a href="https://github.com/liugenqi" target="_blank" rel="noopener">GitHub</a>
+        <a href="/archives/">Archives</a>
+        <a href="https://liugenqi.github.io/">Website</a>
+      </div>
+    </aside>
+
+    <section class="home-main">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Personal homepage</p>
+        <h2 id="hero-title">项目文档、技术笔记和一些真实的想法。</h2>
+        <p class="hero-copy">这里会是一个轻量但可长期维护的个人主页：项目放得下，文章找得到，最近在做什么也不用翻很久。</p>
+        <div class="hero-actions" aria-label="主要入口">
+          <a class="button primary" href="#projects">看项目入口</a>
+          <a class="button outline" href="#writing">读文章记录</a>
         </div>
-      </div>
-      <div class="hero-note" aria-label="站点状态">
-        <span>GitHub Pages</span>
-        <strong>Always in beta</strong>
-      </div>
-    </section>
+      </section>
 
-    <section id="now" class="section intro-section">
-      <div class="section-kicker">Now</div>
-      <div class="intro-grid">
-        <h2>这里不是简历，也不是作品集模板。它会慢慢长成一个好用、好看、也像我的个人入口。</h2>
-        <div class="intro-copy">
-          <p>我喜欢清楚、克制、能长期使用的东西。这个网站会放项目、文章、学习笔记，也放一些不那么正式但真实的观察。</p>
-          <p>先把结构搭起来：主页负责介绍我最近关注什么，归档负责沉淀文字，项目区负责展示做过和正在做的东西。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section signal-section" aria-labelledby="signal-title">
-      <div class="section-heading">
-        <div class="section-kicker">Focus</div>
-        <h2 id="signal-title">最近更关心的三件事</h2>
-      </div>
-      <div class="signal-grid">
-        <article class="signal-item">
-          <span class="signal-index">01</span>
-          <h3>工程实践</h3>
-          <p>写稳定、清晰、容易维护的代码，持续打磨从想法到上线的路径。</p>
-        </article>
-        <article class="signal-item">
-          <span class="signal-index">02</span>
-          <h3>AI 与工具</h3>
-          <p>把 AI 放进真实工作流里，帮助人更快表达、验证和创造。</p>
-        </article>
-        <article class="signal-item">
-          <span class="signal-index">03</span>
-          <h3>长期记录</h3>
-          <p>把学到的东西、踩过的坑和偶尔冒出来的灵感留下来。</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="work" class="section work-section" aria-labelledby="work-title">
-      <div class="section-heading">
-        <div class="section-kicker">Work</div>
-        <h2 id="work-title">项目与作品</h2>
-        <p>先放一个干净的展架，后面可以逐个替换成真实项目、工具或文章合集。</p>
-      </div>
-      <div class="work-showcase">
-        <a class="work-feature" href="https://github.com/liugenqi" target="_blank" rel="noopener">
-          <span class="work-label">GitHub</span>
-          <strong>代码与实验</strong>
-          <p>公开仓库、练手项目和持续迭代的小工具都先从这里开始。</p>
+      <section class="quick-grid" aria-label="内容入口">
+        <a class="quick-card" href="#projects">
+          <span>Projects</span>
+          <strong>项目与文档</strong>
+          <p>未来放项目说明、使用文档、路线图和复盘。</p>
         </a>
-        <a class="work-feature" href="/archives/">
-          <span class="work-label">Site</span>
-          <strong>个人站点改造</strong>
-          <p>从默认博客模板开始，重新设计信息结构、视觉语言和内容入口。</p>
+        <a class="quick-card" href="#writing">
+          <span>Writing</span>
+          <strong>心得与文章</strong>
+          <p>技术笔记、读书摘录、踩坑记录和日常观察。</p>
         </a>
-        <div class="work-feature">
-          <span class="work-label">Next</span>
-          <strong>下一个作品位</strong>
-          <p>这里适合放最想展示的 1 到 3 个作品：工具、应用、课程笔记或研究。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="writing" class="section writing-section" aria-labelledby="writing-title">
-      <div class="writing-wrap">
-        <div class="section-heading">
-          <div class="section-kicker">Writing</div>
-          <h2 id="writing-title">文字记录</h2>
-          <p>旧文章还在。之后技术笔记、项目复盘、阅读摘录都可以沉淀到这里。</p>
-        </div>
-        <a class="writing-link" href="/2025/04/03/hello-world/">
-          <span class="writing-date">2025-04-03</span>
-          <strong>开站记录</strong>
-          <span>进入第一篇记录</span>
+        <a class="quick-card" href="/archives/">
+          <span>Archive</span>
+          <strong>全部归档</strong>
+          <p>保留原博客归档入口，后续逐步整理内容。</p>
         </a>
-      </div>
-    </section>
+      </section>
 
-    <section class="section principles-section" aria-labelledby="principles-title">
-      <div class="section-heading">
-        <div class="section-kicker">Taste</div>
-        <h2 id="principles-title">这个网站会按这几个原则继续长</h2>
-      </div>
-      <div class="principles-list">
-        <p><strong>清楚比炫重要。</strong>先让人一眼知道这是谁、在做什么、哪里能继续看。</p>
-        <p><strong>真实比完整重要。</strong>不急着假装成熟，先把正在发生的东西放出来。</p>
-        <p><strong>长期比热闹重要。</strong>每次更新都能自然地接进来，而不是重新装修一遍。</p>
-      </div>
-    </section>
+      <section class="content-grid">
+        <section id="projects" class="content-section" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2 id="projects-title">项目文档</h2>
+          </div>
+          <div class="entry-list">
+            <a class="entry-item" href="https://github.com/liugenqi" target="_blank" rel="noopener">
+              <span class="entry-date">GitHub</span>
+              <strong>代码与实验</strong>
+              <p>公开仓库、练手项目和正在迭代的小工具。</p>
+            </a>
+            <a class="entry-item" href="/archives/">
+              <span class="entry-date">Site</span>
+              <strong>个人站点整理</strong>
+              <p>把首页改造成可承载项目文档和文章索引的入口。</p>
+            </a>
+          </div>
+        </section>
 
-    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-      <div class="contact-copy">
-        <div class="section-kicker">Contact</div>
-        <h2 id="contact-title">有想法，慢慢聊。</h2>
-        <p>如果你也在做产品、技术、工具或个人网站，欢迎从 GitHub 找到我。这个页面会继续更新，直到它越来越像我本人。</p>
-      </div>
-      <div class="contact-actions">
-        <a class="button primary" href="https://github.com/liugenqi" target="_blank" rel="noopener">GitHub</a>
-        <a class="button outline" href="https://liugenqi.github.io/">liugenqi.github.io</a>
-      </div>
+        <section id="writing" class="content-section" aria-labelledby="writing-title">
+          <div class="section-heading">
+            <p class="section-kicker">Writing</p>
+            <h2 id="writing-title">最近文章</h2>
+          </div>
+          <div class="entry-list">
+            <a class="entry-item" href="/2025/04/03/hello-world/">
+              <span class="entry-date">2025-04-03</span>
+              <strong>开站记录</strong>
+              <p>从默认博客模板开始，慢慢变成更实用的个人入口。</p>
+            </a>
+            <div class="entry-item muted-entry">
+              <span class="entry-date">Next</span>
+              <strong>下一篇文章位</strong>
+              <p>后续可以放技术心得、项目复盘或读书笔记。</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="notes-strip" aria-label="最近计划">
+        <div>
+          <span>Now</span>
+          <strong>接下来优先补真实内容</strong>
+        </div>
+        <p>建议先补 2-3 个项目文档，再把心得文章按“技术 / 项目 / 随笔”归类，页面就会自然丰满起来。</p>
+      </section>
     </section>
   </main>
 
